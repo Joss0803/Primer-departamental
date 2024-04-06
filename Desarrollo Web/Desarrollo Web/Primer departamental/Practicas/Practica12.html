@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario registro de eventos</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/styles12.css">
+</head>
+<body>
+<div class="container">
+    <section class="event-details">
+        <h2>Conferencia Anual de Desarrollo Web</h2>
+        <p>Fecha: 23 de Mayo 2024</p>
+        <p>Lugar: Centro de Convenciones WebService</p>
+        <p>Registrate ahora para conseguir lugar</p>
+        <img src="https://as1.ftcdn.net/jpg/01/94/99/14/220_F_194991409_qkOPSDUdWMihOSX6cPXtanZWvLgTEk8u.jpg" alt="Image" height="320" width="340" >
+    </section>
+    <section class="Registro de formulario">
+        <h2>Registro</h2>
+        <form id="RegistroForm" onsubmit="return validateForm(event)">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" required><br><br>
+            <label for="Correo">Correo Electronico:</label>
+            <input type="email" id="Correo" name="Correo" required><br><br>
+            <label for="Num">Numero de Telefono:</label>
+            <input type="tel" id="Num" name="Num"><br><br>
+            <label for="ticket-type">Tipo de Entrada:</label>
+            <select id="ticket-type" name="ticket-type" required>
+                <option value="General">General</option>
+                <option value="VIP">VIP</option>
+                <option value="Platinum">Platinum</option>
+            </select><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section class="event-details" id="detalles-evento">
+        <h2>Detalles</h2>
+        <p>Nombre:</p>
+        <p>Correo Electronico:</p>
+        <p>Numero de Telefono:</p>
+        <p>Tipo de Entrada:</p>
+        <p>Te hemos enciado un correo de verificacion ¡Gracias por tu compra!</p>
+    </section>
+</div>
+<script src="./Script12.js"></script>
+</body>
+</html>
